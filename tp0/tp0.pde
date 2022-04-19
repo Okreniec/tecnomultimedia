@@ -1,3 +1,5 @@
+//Ivan Okreniec, tp0, comisión 3
+
 void setup () {
   size (400, 400);
   noStroke();
