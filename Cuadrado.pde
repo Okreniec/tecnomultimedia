@@ -17,34 +17,35 @@ class Circulo {
 
   void teclas() {
     if (Pantalla == 1)y += 5 + velocidad;
-    if (y >= width + 5) {
+    if (y >= height + 5) {
       y = -50;
       vida.PerderVida(vida.Vidas);
     }
-    if (x == 50 && y < width && Pantalla == 1 && key == 'q') {
+    if (x == 50 && y < height && Pantalla == 1 && key == 'q') {
       y = -50;
       velocidad +=  0.25;
       puntos.Puntos ++;
     }
-    if (x == 150 && y < width && Pantalla == 1 && key == 'w') {
+    if (x == 150 && y < height && Pantalla == 1 && key == 'w') {
       y = -50;
       velocidad +=  0.25;
       puntos.Puntos ++;
     }  
-    if (x == 250 && y < width && Pantalla == 1 && key == 'e') {
+    if (x == 250 && y < height && Pantalla == 1 && key == 'e') {
       y = -50;
       velocidad +=  0.25;
       puntos.Puntos ++;
     }  
-    if (x == 350 && y < width && Pantalla == 1 && key == 'r') {
+    if (x == 350 && y < height && Pantalla == 1 && key == 'r') {
       y = -50;
       velocidad += 0.25;
       puntos.Puntos ++;
     }
   }
-  
+
   void display() {
     fill(0);
-    ellipse(x, y, diametro, diametro);
+    rectMode (CENTER);
+    rect(x, y, diametro+46, diametro+50);
   }
 }
