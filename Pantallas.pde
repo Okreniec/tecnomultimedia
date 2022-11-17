@@ -8,8 +8,8 @@ class Pantallas {
 
   void PantallaJuego() {
     background(255);
-    line(100, 0, 100, 400);
-    line(200, 0, 200, 400);
-    line(300, 0, 300, 400);
+    line(100, 0, 100, 600);
+    line(200, 0, 200, 600);
+    line(300, 0, 300, 600);
   }
 }
